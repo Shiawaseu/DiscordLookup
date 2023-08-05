@@ -42,7 +42,7 @@ You will need a [Vercel](https://vercel.com) account to host it.
 ## Host your own locally ##
 
 ```bash
-$ git clone https://github.com/MEMEZNUT999/DiscordLookup.git|
+$ git clone https://github.com/MEMEZNUT999/DiscordLookup.git
 ```
 - and then setup `config.json`
 ```bash
