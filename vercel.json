@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "discordlookup",
+    "builds": [
+        { "src": "index.js", "use": "@now/node" }
+    ],
+   "routes": [
+        { "src": "/(.*)", "dest": "index.js" }
+    ]
+}
