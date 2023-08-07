@@ -42,14 +42,18 @@ router.get('/:id', async (req, res) => {
         "success": true,
         "id": json.id,
         "username": json.username,
-        "avatar": json.avatar ? `https://cdn.discordapp.com/avatars/${id}/${json.avatar}.png` : null,
-        "banner": json.banner ? `https://cdn.discordapp.com/banners/${id}/${json.banner}.png` : null,
-        "avatar_decoration": json.avatar_decoration ? `https://cdn.discordapp.com/avatar-decorations/${id}/${json.avatar_decoration}.png` : null,
-        "avatar_isanimated": json.avatar.startsWith("a_"),
-        "banner_isanimated": json.banner.startsWith("a_"),
+        "avatar": {
+            "url": json.avatar ? `https://cdn.discordapp.com/avatars/${id}/${json.avatar}.png` : null,
+            "decoration": json.avatar_decoration ? `https://cdn.discordapp.com/avatar-decorations/${id}/${json.avatar_decoration}.png` : null,
+            "animated": json.avatar.startsWith("a_")
+        },
+        "banner": {
+            "url": json.banner ? `https://cdn.discordapp.com/banners/${id}/${json.banner}.png` : null,
+            "animated": json.banner.startsWith("a_"),
+            "color": json.banner_color
+        },
         "badges": flags,
         "accent_color": json.accent_color,
-        "banner_color": json.banner_color,
         "discriminator": json.discriminator,
     };
 

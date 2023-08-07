@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
-  <a href="#usage">Usage</a> &#xa0; | 
-  <a href="#Host-your-own-with-Render">Hosting your own</a> &#xa0;| &#xa0;
+  <a href="#usage">Usage</a> &#xa0; |
+  <a href="#Host-your-own-with-vercel">Hosting your own</a> &#xa0; | &#xa0;
   <a href="https://github.com/MEMEZNUT999" target="_blank">Author</a>
 </p>
 
@@ -24,28 +24,25 @@ API for retrieving data about users, servers, applications.
 
 ## Usage ##
 
-`Not available`
+`soon`
 
-## Host your own with Render ##
+## Host your own with Vercel ##
 
-- Due to some issues with hosting via `Vercel`, you will be using `Render` instead
-
-You will need a [Render](https://render.com) account to host it.
+You will need a [Vercel](https://vercel.com) account to host it.
 
 1 - Clone this repo to a **private** repository
 
 2 - Edit your `config.json` file to the required data
 
-3 - Create a new `web service` and import the repository you just created, make sure you are logged in beforehand
+3 - Visit [this](https://vercel.com/new) page and import the repository you just created, make sure you are logged in beforehand
 
-4 - After you have deployed your app & installation has finished, you can visit the deployed app and use it anywhere you would like!
-
-5 - Please be aware that Render's free plan provides 100GB bandwidth per month. So make sure you are the only one who accesses it.
+4 - After you have deployed your app, you can visit the url like so
+   - `mywebsite.vercel.app/user/1234`
 
 ## Host your own locally ##
 
 ```bash
-$ git clone https://github.com/MEMEZNUT999/DiscordLookup.git
+$ git clone https://github.com/MEMEZNUT999/DiscordLookup.git|
 ```
 - and then setup `config.json`
 ```bash

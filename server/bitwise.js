@@ -1,4 +1,4 @@
-// Too lazy to write this one out, pasted from https://github.com/mesalytic/discord-lookup-api/blob/main/Constants.js
+// from https://github.com/mesalytic/discord-lookup-api/blob/main/Constants.js
 
 let USER_FLAGS = [{
     flag: "DISCORD_EMPLOYEE",
