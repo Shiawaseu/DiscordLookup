@@ -49,7 +49,7 @@ router.get('/:id', async (req, res) => {
         },
         "banner": {
             "url": json.banner ? `https://cdn.discordapp.com/banners/${id}/${json.banner}.png` : null,
-            "animated": json.banner.startsWith("a_"),
+            "animated": json.banner ? json.banner.startsWith("a_") : false,
             "color": json.banner_color
         },
         "badges": flags,
