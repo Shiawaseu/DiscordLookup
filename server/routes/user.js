@@ -45,7 +45,7 @@ router.get('/:id', async (req, res) => {
         "avatar": {
             "url": json.avatar ? `https://cdn.discordapp.com/avatars/${id}/${json.avatar}.png` : null,
             "decoration": json.avatar_decoration ? `https://cdn.discordapp.com/avatar-decorations/${id}/${json.avatar_decoration}.png` : null,
-            "animated": json.avatar.startsWith("a_")
+            "animated": json.avatar ? json.avatar.startsWith("a_") : false,
         },
         "banner": {
             "url": json.banner ? `https://cdn.discordapp.com/banners/${id}/${json.banner}.png` : null,
