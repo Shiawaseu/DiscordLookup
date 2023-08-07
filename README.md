@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
-  <a href="#usage">Usage</a> &#xa0; |
-  <a href="#Host-your-own-with-vercel">Hosting your own</a> &#xa0; | &#xa0;
+  <a href="#usage">Usage</a> &#xa0; | 
+  <a href="#Host-your-own-with-Render">Hosting your own</a> &#xa0; | &#xa0;
   <a href="https://github.com/MEMEZNUT999" target="_blank">Author</a>
 </p>
 
