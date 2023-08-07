@@ -24,20 +24,23 @@ API for retrieving data about users, servers, applications.
 
 ## Usage ##
 
-`soon`
+`Not available`
 
-## Host your own with Vercel ##
+## Host your own with Render ##
 
-You will need a [Vercel](https://vercel.com) account to host it.
+- Due to some issues with hosting via `Vercel`, you will be using `Render` instead
+
+You will need a [Render](https://render.com) account to host it.
 
 1 - Clone this repo to a **private** repository
 
 2 - Edit your `config.json` file to the required data
 
-3 - Visit [this](https://vercel.com/new) page and import the repository you just created, make sure you are logged in beforehand
+3 - Create a new `web service` and import the repository you just created, make sure you are logged in beforehand
 
-4 - After you have deployed your app, you can visit the url like so
-   - `mywebsite.vercel.app/user/1234`
+4 - After you have deployed your app & installation has finished, you can visit the deployed app and use it anywhere you would like!
+
+5 - Please be aware that Render's free plan provides 100GB bandwidth per month. So make sure you are the only one who accesses it.
 
 ## Host your own locally ##
 
