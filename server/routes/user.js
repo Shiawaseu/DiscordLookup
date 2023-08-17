@@ -4,6 +4,18 @@ const undici = require('undici')
 const settings = require('./../../config.json')
 const bitwise = require('./../bitwise')
 
+const resolveurl = (type,id,hash) => {
+    if (!hash) {
+        return 
+    }
+    if (hash.startsWith("a_")) {
+        return `https://cdn.discordapp.com/${type}/${id}/${hash}.gif`
+    } else {
+        return `https://cdn.discordapp.com/${type}/${id}/${hash}.png`
+    }
+}
+
+
 router.get('/:id', async (req, res) => {
     const id = req.params.id
     const response = await undici.request(`https://discord.com/api/v10/users/${id}`, {
@@ -43,12 +55,12 @@ router.get('/:id', async (req, res) => {
         "id": json.id,
         "username": json.username,
         "avatar": {
-            "url": json.avatar ? `https://cdn.discordapp.com/avatars/${id}/${json.avatar}.png` : null,
+            "url": json.avatar ? resolveurl("avatars", id, json.avatar) : null,
             "decoration": json.avatar_decoration ? `https://cdn.discordapp.com/avatar-decorations/${id}/${json.avatar_decoration}.png` : null,
             "animated": json.avatar ? json.avatar.startsWith("a_") : false,
         },
         "banner": {
-            "url": json.banner ? `https://cdn.discordapp.com/banners/${id}/${json.banner}.png` : null,
+            "url": json.banner ? resolveurl("banners", id, json.banner) : null,
             "animated": json.banner ? json.banner.startsWith("a_") : false,
             "color": json.banner_color
         },
