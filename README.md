@@ -51,7 +51,7 @@ API for retrieving data about users, servers, applications. Made simplified for 
 And now you can call the endpoints like so
  - `my-website.cyclic.app/user/1115643711666278521`
    - Example response:
-```
+```json
 {"success":true,"id":"1115643711666278521","username":"shiawaseu","avatar":{"url":"https://cdn.discordapp.com/avatars/1115643711666278521/cb8ddb72da41691f971a5302a2450c1a.png","decoration":null,"animated":false},"banner":{"url":"https://cdn.discordapp.com/banners/1115643711666278521/a_97da1fb1a9c325b3641e3068b124fd61.png","animated":true,"color":null},"badges":["HOUSE_BRILLIANCE"],"accent_color":null,"discriminator":"0"}
 ```
 ## Host your own locally ##
